@@ -1,15 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="utf-8">
-  <title>kaptangulez.com</title>
-  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaptan Gulez</title>
+  <meta name="description" content="Kaptan Gulez — projeler">
   <meta name="author" content="Kaptan Gulez">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <style>
+    :root {
+        --bg: #fafaf9;
+        --fg: #1c1c1c;
+        --muted: #8a8a8a;
+        --line: #e4e4e2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #121212;
+            --fg: #ececec;
+            --muted: #7a7a7a;
+            --line: #2a2a2a;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    h1 {
+        margin: 0 0 32px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        color: var(--muted);
+    }
+
+    .projects {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects li {
+        border-top: 1px solid var(--line);
+    }
+
+    .projects li:last-child {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .projects a {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 0;
+        font-size: 18px;
+        color: var(--fg);
+        text-decoration: none;
+        transition: opacity 0.15s;
+    }
+
+    .projects a::after {
+        content: "↗";
+        color: var(--muted);
+    }
+
+    .projects:hover a {
+        opacity: 0.4;
+    }
+
+    .projects a:hover,
+    .projects a:focus-visible {
+        opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
-    <div>Hello World.</div>
-    <script src="js/scripts.js"></script>
+  <main>
+    <h1>Kaptan Gulez</h1>
+
+    <ul class="projects">
+      <li><a href="https://magpractice.com">magpractice.com</a></li>
+      <li><a href="https://dartchalk.app">dartchalk.app</a></li>
+      <li><a href="https://kingdefteri.com">kingdefteri.com</a></li>
+    </ul>
+  </main>
 </body>
 </html>
