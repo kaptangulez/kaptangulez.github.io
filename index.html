@@ -68,8 +68,9 @@
     }
 
     .projects a {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        row-gap: 4px;
         padding: 14px 0;
         font-size: 18px;
         color: var(--fg);
@@ -79,6 +80,15 @@
 
     .projects a::after {
         content: "↗";
+        grid-column: 2;
+        grid-row: 1;
+        color: var(--muted);
+    }
+
+    .projects small {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        font-size: 14px;
         color: var(--muted);
     }
 
@@ -98,9 +108,9 @@
     <h1>I have problems. Claude writes the apps.</h1>
 
     <ul class="projects">
-      <li><a href="https://magpractice.com">magpractice.com</a></li>
-      <li><a href="https://dartchalk.app">dartchalk.app</a></li>
-      <li><a href="https://kingdefteri.com">kingdefteri.com</a></li>
+      <li><a href="https://magpractice.com">magpractice.com<small>Drills for men's artistic gymnastics judge candidates.</small></a></li>
+      <li><a href="https://dartchalk.app">dartchalk.app<small>Darts scorekeeper. X01, Cricket and friends.</small></a></li>
+      <li><a href="https://kingdefteri.com">kingdefteri.com<small>Offline scorekeeper for the card game King.</small></a></li>
     </ul>
   </main>
 </body>
