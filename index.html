@@ -1,11 +1,30 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kaptan Gulez</title>
-  <meta name="description" content="Kaptan Gulez — projeler">
+  <title>KG — Apps built with Claude</title>
+  <meta name="description" content="Small apps by KG: magpractice.com for gymnastics judge candidates, dartchalk.app darts scorekeeper, and kingdefteri.com for the card game King.">
   <meta name="author" content="Kaptan Gulez">
+  <meta name="theme-color" content="#121212">
+  <link rel="canonical" href="https://www.kaptangulez.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kaptangulez.com/">
+  <meta property="og:title" content="KG — Apps built with Claude">
+  <meta property="og:description" content="I have problems. Claude writes the apps.">
+  <meta property="og:site_name" content="KG">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kaptan Gulez",
+    "url": "https://www.kaptangulez.com/",
+    "sameAs": ["https://github.com/kaptangulez"]
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ececec'/%3E%3Ctext x='16' y='21.5' font-family='Helvetica,Arial,sans-serif' font-size='15' font-weight='600' text-anchor='middle' fill='%23121212'%3EKG%3C/text%3E%3C/svg%3E">
   <style>
     :root {
@@ -93,6 +112,25 @@
     .projects a:focus-visible {
         opacity: 1;
     }
+
+    .quote {
+        margin: 32px 0 0;
+        font-size: 13px;
+        line-height: 1.5;
+        color: var(--muted);
+    }
+
+    .quote p {
+        margin: 0;
+    }
+
+    .quote cite {
+        font-style: normal;
+    }
+
+    .quote cite::before {
+        content: "— ";
+    }
   </style>
 </head>
 
@@ -105,6 +143,11 @@
       <li><a href="https://dartchalk.app">dartchalk.app<small>Darts scorekeeper. X01, Cricket and friends.</small></a></li>
       <li><a href="https://kingdefteri.com">kingdefteri.com<small>Offline scorekeeper for the card game King.</small></a></li>
     </ul>
+
+    <blockquote class="quote">
+      <p>Certainty of death. Small chance of success. What are we waiting for?</p>
+      <cite>Gimli</cite>
+    </blockquote>
   </main>
 </body>
 </html>
